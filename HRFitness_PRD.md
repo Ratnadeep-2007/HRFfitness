@@ -1,7 +1,7 @@
 # HRFitness — Product Requirements Document
 
 > **Version:** 1.0 · **Date:** May 2026 · **Status:** Draft  
-> **Brand:** HRFitness (HRF) · **Founder:** Hrishi Raut · **Instagram:** [@the_hrf](https://instagram.com/the_hrf)
+> **Brand:** HRFitness (HRF) · **Founder:** Hrishikesh Raut · **Instagram:** [@the_hrf](https://instagram.com/the_hrf)
 
 ---
 
@@ -163,7 +163,7 @@ Single-page architecture with smooth scroll navigation. All sections map to nav 
 | 0 | Sticky Navbar | All | Navigation + CTA + theme toggle | P0 |
 | 1 | Hero | Home | Brand statement, hook, dual CTAs | P0 |
 | 2 | About HRFitness | About | Credibility, trust, what the gym is | P0 |
-| 3 | Founder — Hrishi Raut | About | Coach trust, story, philosophy | P0 |
+| 3 | Founder — Hrishikesh Raut | About | Coach trust, story, philosophy | P0 |
 | 4 | Programs | Programs | 6 program cards, outcomes, enquiry | P0 |
 | 5 | Transformations | Transformations | Social proof, stats, member stories | P0 |
 | 6 | Community & Events | Community | Tribe culture, throwdowns, events | P1 |
@@ -228,17 +228,17 @@ Single-page architecture with smooth scroll navigation. All sections map to nav 
 
 ---
 
-### 5.4 Founder — Hrishi Raut
+### 5.4 Founder — Hrishikesh Raut
 
 | Element | Specification |
 |---|---|
 | **Layout** | Asymmetric full-width: founder photo left (large, high-contrast or B&W) · text block right |
 | **Kicker** | "THE COACH BEHIND HRF" |
-| **Name** | "Hrishi Raut" — Barlow Condensed 64px |
+| **Name** | "Hrishikesh Raut" — Barlow Condensed 64px |
 | **Sub-label** | "Founder & Head Coach, HRFitness" — Space Mono, muted |
-| **Story Copy** | "Hrishi started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune's most versatile fitness center, covering everything from CrossFit to Yoga, sports conditioning to rehabilitation. Hrishi's coaching philosophy is simple: understand the person before you design the program." |
+| **Story Copy** | "Hrishikesh started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune's most versatile fitness center, covering everything from CrossFit to Yoga, sports conditioning to rehabilitation. Hrishikesh's coaching philosophy is simple: understand the person before you design the program." |
 | **Philosophy Quote** | Pull-quote in Barlow Condensed 32px · flame orange — *"A good coach doesn't just build strength. They build belief."* |
-| **Credentials Strip** | Icon badges for certifications — update with Hrishi's real titles before launch |
+| **Credentials Strip** | Icon badges for certifications — update with Hrishikesh's real titles before launch |
 
 ---
 
@@ -296,7 +296,7 @@ Six testimonials across diverse member personas. Horizontal slider on mobile, 3-
 | Name | Persona | Program | Quote |
 |---|---|---|---|
 | **Aditya S.** | Engineering Student | Strength + CrossFit | "I walked in with zero gym experience. In 4 months, I deadlifted double my bodyweight. The coaching here is unlike anything I've seen." |
-| **Priya M.** | Working Professional | Ladies Batch + Yoga | "I was intimidated at first. But the ladies batch felt like a safe space. Hrishi sir and the team made sure I never felt lost." |
+| **Priya M.** | Working Professional | Ladies Batch + Yoga | "I was intimidated at first. But the ladies batch felt like a safe space. Hrishikesh sir and the team made sure I never felt lost." |
 | **Rajan K.** | Amateur Cricketer | Sports-Specific | "My game literally changed after 3 months of sports training at HRF. My speed, agility — all measurably better." |
 | **Sunita D.** | Homemaker, 42 | Yoga + Rehab | "I had chronic back pain for years. The rehab program here didn't just manage it — it fixed it. I train 4 days a week now." |
 | **Kunal P.** | IT Professional | CrossFit | "The WODs are brutal in the best way. I lost 18kg and gained a whole community. Best decision I made this year." |
@@ -425,7 +425,7 @@ Color: #E8420A for accent · #A8A8A8 for neutral
 | **Performance Target** | Lighthouse score > 85 (Performance, Accessibility, SEO) | P1 |
 | **Accessibility** | WCAG AA contrast ratios · semantic HTML · alt text · keyboard focus states | P1 |
 | **Fonts** | Google Fonts preconnect in `<head>`. All 3 families loaded with `display=swap`. | P0 |
-| **SEO Meta** | Title: "HRFitness — Strength, CrossFit & Yoga Gym in Pune · Hrishi Raut" · Meta description · Open Graph | P1 |
+| **SEO Meta** | Title: "HRFitness — Strength, CrossFit & Yoga Gym in Pune · Hrishikesh Raut" · Meta description · Open Graph | P1 |
 | **Favicon** | HRF icon mark, 32×32 SVG + ICO | P1 |
 
 ---
@@ -498,11 +498,11 @@ The following must be provided before Phase 5 (content swap) can be completed.
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 1 | Real gym photos (interior, training, events) | Hrishi Raut / PR Team | ⬜ Pending |
-| 2 | Founder photo — high-res, coaching context | Hrishi Raut | ⬜ Pending |
+| 1 | Real gym photos (interior, training, events) | Hrishikesh Raut / PR Team | ⬜ Pending |
+| 2 | Founder photo — high-res, coaching context | Hrishikesh Raut | ⬜ Pending |
 | 3 | Exact gym address + Google Maps link | Client | ⬜ Pending |
 | 4 | WhatsApp contact number | Client | ⬜ Pending |
-| 5 | Hrishi Raut's certifications (exact titles) | Hrishi Raut | ⬜ Pending |
+| 5 | Hrishikesh Raut's certifications (exact titles) | Hrishikesh Raut | ⬜ Pending |
 | 6 | Batch timings and pricing (even a range) | Client | ⬜ Pending |
 | 7 | Real member testimonials with approval to publish | HRF Team | ⬜ Pending |
 | 8 | Social media handles | Client | ✅ @the_hrf confirmed |
@@ -512,4 +512,4 @@ The following must be provided before Phase 5 (content swap) can be completed.
 ---
 
 *HRFitness PRD v1.0 · Confidential · May 2026*  
-*@the_hrf · Founder: Hrishi Raut · Pune, Maharashtra*
+*@the_hrf · Founder: Hrishikesh Raut · Pune, Maharashtra*

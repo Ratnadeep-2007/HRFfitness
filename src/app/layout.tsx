@@ -23,7 +23,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "HRFitness — Strength, CrossFit & Yoga Gym in Pune",
-  description: "Expert coaching. Real results. A community that pushes you further than you thought you could go. Founded by Hrishi Raut.",
+  description: "Expert coaching. Real results. A community that pushes you further than you thought you could go. Founded by Hrishikesh Raut.",
 };
 
 export default function RootLayout({

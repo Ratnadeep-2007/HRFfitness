@@ -24,7 +24,7 @@ export function Founder() {
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
               style={{ 
-                backgroundImage: `url('https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1974&auto=format&fit=crop')`,
+                backgroundImage: `url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop')`,
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
@@ -36,18 +36,18 @@ export function Founder() {
               THE COACH BEHIND HRF
             </span>
             <h2 className="text-6xl md:text-8xl font-display font-extrabold leading-tight">
-              Hrishi Raut
+              Hrishikesh Raut
             </h2>
             <div className="font-mono text-sm text-muted uppercase tracking-widest">
               Founder & Head Coach, HRFitness
             </div>
             
             <p className="text-body text-lg leading-relaxed mt-4">
-              Hrishi started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune&apos;s most versatile fitness center.
+              Hrishikesh started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune&apos;s most versatile fitness center.
             </p>
             
             <p className="text-body text-lg leading-relaxed">
-              Hrishi&apos;s coaching philosophy is simple: understand the person before you design the program. From CrossFit to Yoga, sports conditioning to rehabilitation, he ensures every member moves with purpose and intent.
+              Hrishikesh&apos;s coaching philosophy is simple: understand the person before you design the program. From CrossFit to Yoga, sports conditioning to rehabilitation, he ensures every member moves with purpose and intent.
             </p>
 
             <blockquote className="mt-8 relative py-8 px-10 border-l-4 border-accent bg-surface/30">

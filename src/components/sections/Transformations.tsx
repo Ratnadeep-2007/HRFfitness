@@ -23,7 +23,7 @@ const memberStories = [
     name: "Priya M.",
     duration: "6 Months",
     achievement: "Gained functional strength",
-    quote: "I was intimidated at first. But the ladies batch felt like a safe space. Hrishi sir and the team made sure I never felt lost.",
+    quote: "I was intimidated at first. But the ladies batch felt like a safe space. Hrishikesh sir and the team made sure I never felt lost.",
     image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=2070&auto=format&fit=crop",
   },
   {
