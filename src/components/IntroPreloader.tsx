@@ -28,7 +28,7 @@ export function IntroPreloader() {
 
   return (
     <div
-      className={`fixed inset-0 bg-black z-[10000] flex items-center justify-center transition-all duration-1000 ease-out ${
+      className={`fixed inset-0 bg-black z-[10000] flex items-center justify-center transition-all duration-[1500ms] ease-out ${
         isDismissed ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -36,7 +36,7 @@ export function IntroPreloader() {
         {/* Pulsing, Glowing Circular Button Wrapper */}
         <button
           onClick={handleStart}
-          className={`relative group flex items-center justify-center w-40 h-40 md:w-52 md:h-52 rounded-full cursor-pointer focus:outline-none transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+          className={`relative group flex items-center justify-center w-40 h-40 md:w-52 md:h-52 rounded-full cursor-pointer focus:outline-none transition-all duration-[2200ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${
             isDismissed ? "-translate-y-[120vh] rotate-[-720deg] scale-75 opacity-0" : "translate-y-0 rotate-0 scale-100 opacity-100"
           }`}
         >
