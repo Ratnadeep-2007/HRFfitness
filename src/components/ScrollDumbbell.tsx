@@ -7,10 +7,12 @@ import { useTheme } from "next-themes"
 export function ScrollDumbbell() {
   const dumbbellRef = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { resolvedTheme } = useTheme()
   const isLight = resolvedTheme === "light"
 
   useEffect(() => {
+    setMounted(true)
     let ticking = false
 
     const handleScroll = () => {
@@ -47,6 +49,8 @@ export function ScrollDumbbell() {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
+
+  if (!mounted) return null
 
   return (
     <div
