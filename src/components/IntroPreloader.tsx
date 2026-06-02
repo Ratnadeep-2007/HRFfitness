@@ -30,7 +30,7 @@ export function IntroPreloader() {
 
   return (
     <div
-      className={`fixed inset-0 bg-black z-[10000] flex items-center justify-center transition-all duration-[1500ms] ease-out ${
+      className={`fixed inset-0 bg-black z-[10000] flex items-center justify-center transition-all duration-[3000ms] ease-out ${
         isDismissed ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -62,11 +62,11 @@ export function IntroPreloader() {
           disabled={!is3dLoaded}
           style={{
             transform: isDismissed 
-              ? "translateY(-120vh) rotate(-720deg) scale(0.5)" 
+              ? "translateY(-120vh) rotate(-720deg) scale(0.4)" 
               : "translateY(0) rotate(0deg) scale(1)",
             opacity: isDismissed ? 0 : 1,
             transitionProperty: "transform, opacity",
-            transitionDuration: "2200ms",
+            transitionDuration: "4500ms",
             transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
           }}
           className={`relative group flex items-center justify-center w-64 h-64 md:w-80 md:h-80 rounded-full cursor-pointer focus:outline-none ${

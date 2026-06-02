@@ -135,18 +135,18 @@ export function ThreeDumbbell({ onProgress, onLoaded, isDismissed }: ThreeDumbbe
 
       if (dumbbell) {
         if (isDismissedRef.current) {
-          // Accelerate rotation when dismissed
-          dismissalRotationSpeed += 0.005
-          autoRotationSpeed = 0.08 + dismissalRotationSpeed
+          // Accelerate rotation more gradually when dismissed
+          dismissalRotationSpeed += 0.001
+          autoRotationSpeed = 0.02 + dismissalRotationSpeed
           
           group.rotation.y += autoRotationSpeed
           group.rotation.x += autoRotationSpeed * 0.3
           group.rotation.z += autoRotationSpeed * 0.1
           
-          // Shrink size slightly as it rolls away
+          // Shrink size much more slowly to match the longer transition
           const currentScale = group.scale.x
           if (currentScale > 0.01) {
-            group.scale.setScalar(currentScale - 0.015)
+            group.scale.setScalar(currentScale - 0.003)
           }
         } else {
           // Slow continuous idle rotation
