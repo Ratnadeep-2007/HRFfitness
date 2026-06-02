@@ -45,3 +45,5 @@ next-env.d.ts
 
 # raw user uploads
 WhatsApp Image*.jpeg
+
+.vercel

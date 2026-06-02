@@ -4,11 +4,13 @@ import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
 import { Dumbbell, Zap, Wind, Trophy, Users, HeartPulse, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { ElectricBorder } from "@/components/ElectricBorder"
 
 const programs = [
   {
     name: "Strength Training",
     accent: "bg-gradient-to-r from-accent to-[#8B0000]",
+    glowColor: "#E8420A",
     icon: Dumbbell,
     tagline: "Get stronger, move better, look the part.",
     outcomes: ["Progressive barbell programming", "Functional muscle", "Personalized load plans"],
@@ -16,6 +18,7 @@ const programs = [
   {
     name: "CrossFit",
     accent: "bg-gradient-to-r from-accent to-[#8B0000]",
+    glowColor: "#E8420A",
     icon: Zap,
     tagline: "High intensity. High results. Every time.",
     outcomes: ["WOD-based group sessions", "Cardio + strength combo", "Measurable performance gains"],
@@ -23,6 +26,7 @@ const programs = [
   {
     name: "Sports-Specific Training",
     accent: "bg-gold", // Maps to #FF4D4D in globals.css
+    glowColor: "#FF4D4D",
     icon: Trophy,
     tagline: "Train like the athlete you want to become.",
     outcomes: ["Multi-sport conditioning", "Speed, agility & power", "Competition prep"],
@@ -30,6 +34,7 @@ const programs = [
   {
     name: "Ladies Batches",
     accent: "bg-rose", // Maps to #FF3333 in globals.css
+    glowColor: "#FF3333",
     icon: Users,
     tagline: "Your space. Your pace. Your results.",
     outcomes: ["Women-only batches", "Safe & supportive", "Strength, toning & wellness"],
@@ -37,6 +42,7 @@ const programs = [
   {
     name: "Rehab Support",
     accent: "bg-teal", // Maps to #CC0000 in globals.css
+    glowColor: "#CC0000",
     icon: HeartPulse,
     tagline: "Come back stronger than before your injury.",
     outcomes: ["Post-injury return protocols", "Movement correction", "Trainer-guided recovery"],
@@ -44,6 +50,7 @@ const programs = [
   {
     name: "Yoga",
     accent: "bg-indigo", // Maps to #990000 in globals.css
+    glowColor: "#990000",
     icon: Wind,
     tagline: "Flexibility, breath, and mental stillness.",
     outcomes: ["Morning & evening batches", "Mobility for all levels", "Stress & recovery focus"],
@@ -73,46 +80,52 @@ export function Programs() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {programs.map((program, index) => (
-            <div
+            <ElectricBorder
               key={program.name}
+              color={program.glowColor}
+              speed={0.8}
+              chaos={0.1}
+              borderRadius={0}
               className={cn(
-                "group relative bg-surface border border-border p-8 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] fade-in-up max-w-md mx-auto w-full md:max-w-none",
+                "fade-in-up max-w-md mx-auto w-full md:max-w-none",
                 inView && "visible"
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              {/* Top Accent Bar */}
-              <div className={cn("absolute top-0 left-0 w-full h-[3px]", program.accent)} />
-              
-              {/* Icon */}
-              <div className="mb-6 text-accent group-hover:scale-110 transition-transform">
-                <program.icon size={40} strokeWidth={1.5} />
+              <div className="group relative bg-surface border border-border p-8 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] h-full w-full">
+                {/* Top Accent Bar */}
+                <div className={cn("absolute top-0 left-0 w-full h-[3px]", program.accent)} />
+                
+                {/* Icon */}
+                <div className="mb-6 text-accent group-hover:scale-110 transition-transform">
+                  <program.icon size={40} strokeWidth={1.5} />
+                </div>
+
+                {/* Title & Tagline */}
+                <h3 className="text-2xl font-display font-bold mb-3">{program.name}</h3>
+                <p className="text-muted text-sm mb-8 leading-relaxed">
+                  {program.tagline}
+                </p>
+
+                {/* Outcomes */}
+                <ul className="space-y-3 mb-10">
+                  {program.outcomes.map((outcome) => (
+                    <li key={outcome} className="flex items-start gap-3 text-[13px] text-body">
+                      <span className="mt-1 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                      {outcome}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* CTA */}
+                <Link
+                  href="#contact"
+                  className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-accent group-hover:translate-x-2 transition-transform"
+                >
+                  Enquire Now <ArrowRight size={14} />
+                </Link>
               </div>
-
-              {/* Title & Tagline */}
-              <h3 className="text-2xl font-display font-bold mb-3">{program.name}</h3>
-              <p className="text-muted text-sm mb-8 leading-relaxed">
-                {program.tagline}
-              </p>
-
-              {/* Outcomes */}
-              <ul className="space-y-3 mb-10">
-                {program.outcomes.map((outcome) => (
-                  <li key={outcome} className="flex items-start gap-3 text-[13px] text-body">
-                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                    {outcome}
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA */}
-              <Link
-                href="#contact"
-                className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-accent group-hover:translate-x-2 transition-transform"
-              >
-                Enquire Now <ArrowRight size={14} />
-              </Link>
-            </div>
+            </ElectricBorder>
           ))}
         </div>
       </div>
