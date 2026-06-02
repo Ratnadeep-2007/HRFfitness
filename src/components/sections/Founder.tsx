@@ -61,7 +61,7 @@ export function Founder() {
               Hrishi&apos;s coaching philosophy is simple: understand the person before you design the program. From CrossFit, sports conditioning, and rehabilitation to Yoga, he ensures every member moves with purpose and intent.
             </p>
 
-            <blockquote className="mt-8 relative py-8 px-10 border-l-4 border-accent bg-surface/30">
+            <blockquote className="mt-8 relative py-6 px-6 sm:py-8 sm:px-10 border-l-4 border-accent bg-surface/30">
               <p className="text-2xl md:text-3xl font-display text-accent italic leading-tight">
                 &ldquo;A good coach doesn&apos;t just build strength. They build belief.&rdquo;
               </p>

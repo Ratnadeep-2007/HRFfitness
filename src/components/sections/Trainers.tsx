@@ -38,7 +38,7 @@ export function Trainers() {
   })
 
   return (
-    <section id="trainers" className="py-24 bg-black">
+    <section id="trainers" className="py-24 bg-black overflow-hidden w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center gap-6 mb-16">
           <span className="font-mono text-[11px] text-accent tracking-[0.2em] uppercase">

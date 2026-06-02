@@ -58,7 +58,7 @@ export function About() {
   })
 
   return (
-    <section id="about" className="py-24 bg-charcoal">
+    <section id="about" className="py-24 bg-charcoal overflow-hidden w-full">
       <div className="container mx-auto px-4">
         <div 
           ref={ref}

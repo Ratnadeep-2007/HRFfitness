@@ -26,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="antialiased font-sans"
+        className="antialiased font-sans overflow-x-hidden w-full"
       >
         <ThemeProvider
           attribute="class"

@@ -16,7 +16,7 @@ const Logo = () => (
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-black overflow-hidden w-full">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
           {/* Left: Contact Info */}

@@ -43,7 +43,7 @@ export function Transformations() {
   })
 
   return (
-    <section id="transformations" className="py-24 bg-black">
+    <section id="transformations" className="py-24 bg-black overflow-hidden w-full">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
@@ -102,7 +102,7 @@ export function Transformations() {
         </div>
 
         {/* Achievement Strip */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 border-y border-border py-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-12 border-y border-border py-12">
           {achievements.map((achievement) => (
             <div key={achievement.label} className="text-center">
               <div className="font-display text-4xl md:text-5xl font-extrabold text-accent mb-2">

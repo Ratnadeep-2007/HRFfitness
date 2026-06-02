@@ -58,7 +58,7 @@ export function Programs() {
   })
 
   return (
-    <section id="programs" className="py-24 bg-charcoal">
+    <section id="programs" className="py-24 bg-charcoal overflow-hidden w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center gap-6 mb-16">
           <span className="font-mono text-[11px] text-accent tracking-[0.2em] uppercase">

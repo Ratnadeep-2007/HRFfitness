@@ -46,7 +46,7 @@ export function Community() {
   })
 
   return (
-    <section id="community" className="py-24 bg-charcoal">
+    <section id="community" className="py-24 bg-charcoal overflow-hidden w-full">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-6 mb-16">
