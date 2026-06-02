@@ -60,7 +60,7 @@ export function Contact() {
             {/* Social Links */}
             <div className="flex gap-4">
               <Link 
-                href="https://instagram.com/the_hrf" 
+                href="https://www.instagram.com/the_hrf?igsh=N3RpMGs0aDNxMmQx" 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
