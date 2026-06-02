@@ -3,6 +3,7 @@ import { Barlow_Condensed, Plus_Jakarta_Sans, Space_Mono } from "next/font/googl
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ScrollDumbbell } from "@/components/ScrollDumbbell";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         >
           {children}
           <WhatsAppButton />
+          <ScrollDumbbell />
         </ThemeProvider>
       </body>
     </html>
