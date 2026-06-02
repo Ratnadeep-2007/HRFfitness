@@ -48,7 +48,7 @@ export function Navbar() {
             src="/hrf-main-logo.png"
             alt="HRF Fitness Logo"
             fill
-            className="object-contain transition-transform group-hover:scale-105"
+            className="object-contain transition-transform group-hover:scale-105 dark:invert-0 invert"
             priority
           />
         </Link>

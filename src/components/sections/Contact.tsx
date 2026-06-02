@@ -117,7 +117,7 @@ export function Footer() {
             alt="HRF Logo"
             width={80}
             height={32}
-            className="h-full w-auto object-contain"
+            className="h-full w-auto object-contain dark:invert-0 invert"
           />
         </div>
         

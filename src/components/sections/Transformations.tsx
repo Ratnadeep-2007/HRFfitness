@@ -81,7 +81,7 @@ export function Transformations() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url('${story.image}')` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/20 to-transparent" />
               
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="mb-4">

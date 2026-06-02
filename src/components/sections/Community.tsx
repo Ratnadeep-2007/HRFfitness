@@ -79,7 +79,7 @@ export function Community() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
                 style={{ backgroundImage: `url('${event.image}')` }}
               />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
+              <div className="absolute inset-0 bg-[#000000]/40 group-hover:bg-[#000000]/20 transition-colors" />
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-accent transition-colors flex items-center gap-2">
                   {event.prefix && <Logo />}

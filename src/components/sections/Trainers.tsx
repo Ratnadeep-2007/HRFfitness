@@ -70,7 +70,7 @@ export function Trainers() {
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   style={{ objectPosition: trainer.position }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="flex gap-4">
                     <Camera size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />
                     <MessageCircle size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />

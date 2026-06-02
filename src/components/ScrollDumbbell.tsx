@@ -2,10 +2,13 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
+import { useTheme } from "next-themes"
 
 export function ScrollDumbbell() {
   const dumbbellRef = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
+  const { resolvedTheme } = useTheme()
+  const isLight = resolvedTheme === "light"
 
   useEffect(() => {
     let ticking = false
@@ -52,7 +55,8 @@ export function ScrollDumbbell() {
         visible ? "opacity-10 md:opacity-20" : "opacity-0"
       }`}
       style={{
-        mixBlendMode: "screen",
+        mixBlendMode: isLight ? "multiply" : "screen",
+        filter: isLight ? "invert(1) hue-rotate(180deg)" : "none",
         willChange: "transform",
       }}
     >
