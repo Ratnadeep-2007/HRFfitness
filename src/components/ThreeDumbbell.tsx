@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
+// @ts-ignore
+import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js"
 
 interface ThreeDumbbellProps {
   onProgress?: (percent: number) => void
@@ -78,6 +80,7 @@ export function ThreeDumbbell({ onProgress, onLoaded, isDismissed }: ThreeDumbbe
 
     // GLTF Loader
     const loader = new GLTFLoader()
+    loader.setMeshoptDecoder(MeshoptDecoder)
     let dumbbell: THREE.Object3D | null = null
     let autoRotationSpeed = 0.005
     let dismissalRotationSpeed = 0.0
