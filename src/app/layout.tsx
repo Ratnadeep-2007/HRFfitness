@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ScrollDumbbell } from "@/components/ScrollDumbbell";
+import { IntroPreloader } from "@/components/IntroPreloader";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
           {children}
           <WhatsAppButton />
           <ScrollDumbbell />
+          <IntroPreloader />
         </ThemeProvider>
       </body>
     </html>
