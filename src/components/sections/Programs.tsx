@@ -10,7 +10,6 @@ const programs = [
   {
     name: "Strength Training",
     accent: "bg-gradient-to-r from-accent to-[#8B0000]",
-    glowColor: "#E8420A",
     icon: Dumbbell,
     tagline: "Get stronger, move better, look the part.",
     outcomes: ["Progressive barbell programming", "Functional muscle", "Personalized load plans"],
@@ -18,7 +17,6 @@ const programs = [
   {
     name: "CrossFit",
     accent: "bg-gradient-to-r from-accent to-[#8B0000]",
-    glowColor: "#E8420A",
     icon: Zap,
     tagline: "High intensity. High results. Every time.",
     outcomes: ["WOD-based group sessions", "Cardio + strength combo", "Measurable performance gains"],
@@ -26,7 +24,6 @@ const programs = [
   {
     name: "Sports-Specific Training",
     accent: "bg-gold", // Maps to #FF4D4D in globals.css
-    glowColor: "#FF4D4D",
     icon: Trophy,
     tagline: "Train like the athlete you want to become.",
     outcomes: ["Multi-sport conditioning", "Speed, agility & power", "Competition prep"],
@@ -34,7 +31,6 @@ const programs = [
   {
     name: "Ladies Batches",
     accent: "bg-rose", // Maps to #FF3333 in globals.css
-    glowColor: "#FF3333",
     icon: Users,
     tagline: "Your space. Your pace. Your results.",
     outcomes: ["Women-only batches", "Safe & supportive", "Strength, toning & wellness"],
@@ -42,7 +38,6 @@ const programs = [
   {
     name: "Rehab Support",
     accent: "bg-teal", // Maps to #CC0000 in globals.css
-    glowColor: "#CC0000",
     icon: HeartPulse,
     tagline: "Come back stronger than before your injury.",
     outcomes: ["Post-injury return protocols", "Movement correction", "Trainer-guided recovery"],
@@ -50,7 +45,6 @@ const programs = [
   {
     name: "Yoga",
     accent: "bg-indigo", // Maps to #990000 in globals.css
-    glowColor: "#990000",
     icon: Wind,
     tagline: "Flexibility, breath, and mental stillness.",
     outcomes: ["Morning & evening batches", "Mobility for all levels", "Stress & recovery focus"],
@@ -82,7 +76,7 @@ export function Programs() {
           {programs.map((program, index) => (
             <ElectricBorder
               key={program.name}
-              color={program.glowColor}
+              color="#E8420A"
               speed={0.8}
               chaos={0.1}
               borderRadius={0}
