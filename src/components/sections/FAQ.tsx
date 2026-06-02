@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "How much does membership cost?",
-    answer: "Pricing varies based on the program (CrossFit, Strength, Yoga, etc.) and the duration of your commitment. We offer monthly, quarterly, and annual packages. Contact us for a free consultation and quote.",
+    answer: "Pricing varies based on the program (CrossFit, Strength, Rehab, and Yoga) and the duration of your commitment. We offer monthly, quarterly, and annual packages. Contact us for a free consultation and quote.",
   },
 ]
 

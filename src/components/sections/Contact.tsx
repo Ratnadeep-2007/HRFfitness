@@ -2,6 +2,17 @@
 
 import { MessageCircle, MapPin, Phone, Mail, Camera, Play } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+
+const Logo = () => (
+  <Image
+    src="/hrf-logo1.png"
+    alt="HRF"
+    width={48}
+    height={20}
+    className="inline-block object-contain align-baseline mx-1 h-[0.8em] w-auto"
+  />
+)
 
 export function Contact() {
   return (
@@ -15,7 +26,7 @@ export function Contact() {
                 READY TO START?
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-7xl">
-                Join the <span className="text-accent">HRF</span> Family.
+                Join the <Logo /> Family.
               </h2>
               <p className="text-body text-lg leading-relaxed max-w-lg">
                 Stop waiting for the perfect time. The perfect time is now. Reach out for a free trial or consultation.
@@ -60,12 +71,12 @@ export function Contact() {
             </div>
 
             {/* Map Placeholder */}
-            <div className="aspect-video w-full bg-surface border border-border grayscale hover:grayscale-0 transition-all cursor-pointer overflow-hidden">
+            <div className="aspect-video w-full bg-surface border border-border overflow-hidden group">
                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.265588856011!2d73.7719001!3d18.5621827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMzJzQzLjkiTiA3M8KwNDYnMTguOCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                src="https://maps.google.com/maps?q=18.74982962620519,72.8874433611419&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0 }} 
+                style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(85%) contrast(1.2)" }} 
                 allowFullScreen={true} 
                 loading="lazy"
                 aria-hidden="false"
@@ -101,10 +112,10 @@ export function Contact() {
                 <select className="bg-surface border border-border px-4 py-3 text-sm focus:border-accent outline-none transition-colors appearance-none cursor-pointer text-text">
                   <option>Strength Training</option>
                   <option>CrossFit</option>
-                  <option>Yoga</option>
                   <option>Sports-Specific Training</option>
                   <option>Ladies Batch</option>
                   <option>Rehab Support</option>
+                  <option>Yoga</option>
                 </select>
               </div>
               <div className="flex flex-col gap-2">
@@ -147,13 +158,14 @@ export function Footer() {
   return (
     <footer className="py-12 bg-black border-t border-border">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center gap-2">
-          <div className="bg-accent w-8 h-8 flex items-center justify-center text-white font-display text-sm font-bold">
-            HRF
-          </div>
-          <span className="font-display text-lg font-bold tracking-tight">
-            HR<span className="text-accent">FITNESS</span>
-          </span>
+        <div className="h-8">
+          <Image
+            src="/hrf-logo1.png"
+            alt="HRF Logo"
+            width={80}
+            height={32}
+            className="h-full w-auto object-contain"
+          />
         </div>
         
         <div className="text-[11px] font-mono text-muted uppercase tracking-widest">

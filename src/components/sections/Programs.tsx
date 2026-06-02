@@ -21,13 +21,6 @@ const programs = [
     outcomes: ["WOD-based group sessions", "Cardio + strength combo", "Measurable performance gains"],
   },
   {
-    name: "Yoga",
-    accent: "bg-indigo", // Maps to #990000 in globals.css
-    icon: Wind,
-    tagline: "Flexibility, breath, and mental stillness.",
-    outcomes: ["Morning & evening batches", "Mobility for all levels", "Stress & recovery focus"],
-  },
-  {
     name: "Sports-Specific Training",
     accent: "bg-gold", // Maps to #FF4D4D in globals.css
     icon: Trophy,
@@ -47,6 +40,13 @@ const programs = [
     icon: HeartPulse,
     tagline: "Come back stronger than before your injury.",
     outcomes: ["Post-injury return protocols", "Movement correction", "Trainer-guided recovery"],
+  },
+  {
+    name: "Yoga",
+    accent: "bg-indigo", // Maps to #990000 in globals.css
+    icon: Wind,
+    tagline: "Flexibility, breath, and mental stillness.",
+    outcomes: ["Morning & evening batches", "Mobility for all levels", "Stress & recovery focus"],
   },
 ]
 
@@ -76,7 +76,7 @@ export function Programs() {
             <div
               key={program.name}
               className={cn(
-                "group relative bg-surface border border-border p-8 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] fade-in-up",
+                "group relative bg-surface border border-border p-8 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] fade-in-up max-w-md mx-auto w-full md:max-w-none",
                 inView && "visible"
               )}
               style={{ transitionDelay: `${index * 100}ms` }}

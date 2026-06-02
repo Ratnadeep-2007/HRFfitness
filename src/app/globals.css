@@ -21,6 +21,17 @@
   --font-mono: var(--font-mono);
 
   --breakpoint-xs: 480px;
+
+  --animate-scroll: scroll 30s linear infinite;
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 :root {

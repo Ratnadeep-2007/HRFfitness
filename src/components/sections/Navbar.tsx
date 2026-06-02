@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
@@ -42,13 +43,14 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#home" className="flex items-center gap-2 group">
-          <div className="bg-accent w-10 h-10 flex items-center justify-center text-white font-display text-xl font-bold transition-transform group-hover:scale-105">
-            HRF
-          </div>
-          <span className="font-display text-2xl font-bold tracking-tight hidden sm:inline-block">
-            HR<span className="text-accent">FITNESS</span>
-          </span>
+        <Link href="#home" className="relative h-12 w-48 group">
+          <Image
+            src="/hrf-main-logo.png"
+            alt="HRF Fitness Logo"
+            fill
+            className="object-contain transition-transform group-hover:scale-105"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -99,12 +101,6 @@ export function Navbar() {
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         )}
       >
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-6 right-6 p-2 text-text"
-        >
-          <X size={32} />
-        </button>
         {navLinks.map((link) => (
           <Link
             key={link.name}

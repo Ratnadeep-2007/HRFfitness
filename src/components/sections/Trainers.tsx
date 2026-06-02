@@ -6,32 +6,28 @@ import { Camera, MessageCircle, User } from "lucide-react"
 
 const trainers = [
   {
-    name: "Alex Rivera",
+    name: "Arjun Sir",
     role: "Head Coach & Founder",
     specialty: "Strength & Conditioning",
     bio: "10+ years of experience in transformative strength training and athletic performance.",
-    image: "/api/placeholder/400/500",
+    image: "/trainers/arjun.jpg",
+    position: "center 20%",
   },
   {
-    name: "Sarah Chen",
+    name: "Shreyas Sir",
     role: "Lead CrossFit Coach",
     specialty: "High-Intensity Training",
     bio: "Former competitive athlete specializing in functional fitness and metabolic conditioning.",
-    image: "/api/placeholder/400/500",
+    image: "/trainers/shreyas.jpeg",
+    position: "center 15%",
   },
   {
-    name: "Marcus Thorne",
+    name: "Nitesh Sir",
     role: "Senior Trainer",
     specialty: "Bodybuilding & Hypertrophy",
     bio: "Expert in muscle physiology and precision hypertrophy programming for all levels.",
-    image: "/api/placeholder/400/500",
-  },
-  {
-    name: "Elena Vance",
-    role: "Mobility Specialist",
-    specialty: "Yoga & Recovery",
-    bio: "Focuses on injury prevention, mobility, and holistic recovery protocols.",
-    image: "/api/placeholder/400/500",
+    image: "/trainers/nitesh.jpeg",
+    position: "center 10%",
   },
 ]
 
@@ -55,13 +51,13 @@ export function Trainers() {
 
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {trainers.map((trainer, index) => (
             <div
               key={trainer.name}
               className={cn(
-                "group relative bg-charcoal border border-border overflow-hidden transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] fade-in-up",
+                "group relative bg-charcoal border border-border overflow-hidden transition-all duration-500 hover:shadow-[0_8px_32px_rgba(255,0,0,0.12)] fade-in-up max-w-md mx-auto w-full md:max-w-none",
                 inView && "visible"
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -71,7 +67,8 @@ export function Trainers() {
                 <img 
                   src={trainer.image} 
                   alt={trainer.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  style={{ objectPosition: trainer.position }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="flex gap-4">

@@ -1,6 +1,7 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 
@@ -23,7 +24,7 @@ const memberStories = [
     name: "Priya M.",
     duration: "6 Months",
     achievement: "Gained functional strength",
-    quote: "I was intimidated at first. But the ladies batch felt like a safe space. Hrishikesh sir and the team made sure I never felt lost.",
+    quote: "I was intimidated at first. But the ladies batch felt like a safe space. Hrishi sir and the team made sure I never felt lost.",
     image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=2070&auto=format&fit=crop",
   },
   {
@@ -71,7 +72,7 @@ export function Transformations() {
             <div
               key={story.name}
               className={cn(
-                "group relative aspect-[3/4] overflow-hidden bg-surface fade-in-up",
+                "group relative aspect-[3/4] overflow-hidden bg-surface fade-in-up max-w-md mx-auto w-full md:max-w-none",
                 inView && "visible"
               )}
               style={{ transitionDelay: `${index * 150}ms` }}
@@ -128,8 +129,13 @@ export function Transformations() {
             </Link>
           </div>
           {/* Decorative background element */}
-          <div className="absolute -right-20 -bottom-20 text-[180px] font-display font-extrabold text-white/10 select-none pointer-events-none group-hover:translate-x-10 transition-transform duration-1000">
-            HRF
+          <div className="absolute -right-10 -bottom-10 w-64 h-64 select-none pointer-events-none group-hover:translate-x-5 transition-transform duration-1000 opacity-10 grayscale invert">
+            <Image
+              src="/hrf-logo1.png"
+              alt="HRF Watermark"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </div>

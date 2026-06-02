@@ -1,7 +1,18 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
+
+const Logo = () => (
+  <Image
+    src="/hrf-logo1.png"
+    alt="HRF"
+    width={48}
+    height={20}
+    className="inline-block object-contain align-baseline mx-1 h-[0.8em] w-auto"
+  />
+)
 
 export function Founder() {
   const { ref, inView } = useInView({
@@ -22,9 +33,9 @@ export function Founder() {
           {/* Left Column: Photo */}
           <div className="relative aspect-[4/5] lg:h-[700px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 group">
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+              className="absolute inset-0 bg-cover bg-top transition-transform duration-1000 group-hover:scale-110"
               style={{ 
-                backgroundImage: `url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop')`,
+                backgroundImage: `url('/hrishi.png')`,
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
@@ -33,21 +44,21 @@ export function Founder() {
           {/* Right Column: Content */}
           <div className="flex flex-col gap-6">
             <span className="font-mono text-[11px] text-accent tracking-[0.2em] uppercase">
-              THE COACH BEHIND HRF
+              THE COACH BEHIND <Logo />
             </span>
             <h2 className="text-6xl md:text-8xl font-display font-extrabold leading-tight">
-              Hrishikesh Raut
+              Hrishi Raut
             </h2>
             <div className="font-mono text-sm text-muted uppercase tracking-widest">
               Founder & Head Coach, HRFitness
             </div>
             
             <p className="text-body text-lg leading-relaxed mt-4">
-              Hrishikesh started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune&apos;s most versatile fitness center.
+              Hrishi started HRFitness with one belief: that every person — regardless of age, gender, or fitness level — deserves expert coaching and a community that holds them accountable. What began as a passion for strength and functional training grew into Pune&apos;s most versatile fitness center.
             </p>
             
             <p className="text-body text-lg leading-relaxed">
-              Hrishikesh&apos;s coaching philosophy is simple: understand the person before you design the program. From CrossFit to Yoga, sports conditioning to rehabilitation, he ensures every member moves with purpose and intent.
+              Hrishi&apos;s coaching philosophy is simple: understand the person before you design the program. From CrossFit, sports conditioning, and rehabilitation to Yoga, he ensures every member moves with purpose and intent.
             </p>
 
             <blockquote className="mt-8 relative py-8 px-10 border-l-4 border-accent bg-surface/30">

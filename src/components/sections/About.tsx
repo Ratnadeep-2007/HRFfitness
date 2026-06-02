@@ -92,7 +92,7 @@ export function About() {
              <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
               style={{ 
-                backgroundImage: `url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070&auto=format&fit=crop')`,
+                backgroundImage: `url('/gym.jpg')`,
               }}
             />
             <div className="absolute inset-0 bg-accent/10 group-hover:bg-accent/0 transition-colors duration-700" />

@@ -19,11 +19,11 @@ export function Hero() {
         <div className="flex flex-col items-center gap-6 max-w-5xl mx-auto">
           {/* Kicker */}
           <span className="font-mono text-[10px] md:text-[11px] text-accent tracking-[0.2em] uppercase">
-            STRENGTH · CROSSFIT · YOGA · SPORTS · REHAB
+            STRENGTH · CROSSFIT · SPORTS · REHAB · YOGA
           </span>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-8xl lg:text-9xl font-display font-extrabold leading-[0.9] text-text tracking-tighter">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display font-extrabold leading-[0.9] text-text tracking-tighter">
             WHERE DISCIPLINE <br /> BECOMES <span className="text-accent">TRANSFORMATION</span>
           </h1>
 

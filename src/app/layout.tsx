@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "HRFitness — Strength, CrossFit & Yoga Gym in Pune",
-  description: "Expert coaching. Real results. A community that pushes you further than you thought you could go. Founded by Hrishikesh Raut.",
+  description: "Expert coaching. Real results. A community that pushes you further than you thought you could go. Founded by Hrishi Raut.",
 };
 
 export default function RootLayout({
@@ -43,6 +44,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>

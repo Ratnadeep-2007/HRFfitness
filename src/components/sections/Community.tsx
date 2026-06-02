@@ -1,11 +1,23 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
+
+const Logo = () => (
+  <Image
+    src="/hrf-logo1.png"
+    alt="HRF"
+    width={48}
+    height={20}
+    className="inline-block object-contain align-baseline mx-1 h-[0.8em] w-auto"
+  />
+)
 
 const events = [
   {
-    title: "HRF Throwdown",
+    title: "Throwdown",
+    prefix: true,
     description: "Our in-house CrossFit-style competition. Test your fitness. Meet your limits.",
     image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop",
   },
@@ -21,7 +33,8 @@ const events = [
   },
   {
     title: "Opening Day",
-    description: "Annual celebration of the HRF family. A tradition of showing up.",
+    description: "Annual celebration of the family.",
+    suffix: true,
     image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop",
   },
 ]
@@ -41,10 +54,10 @@ export function Community() {
             MORE THAN TRAINING
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl max-w-2xl">
-            HRF is a Tribe.
+            <Logo /> is a Tribe.
           </h2>
           <p className="text-body text-lg leading-relaxed max-w-3xl">
-            We don&apos;t just train together — we compete, celebrate, and grow together. From our signature Throwdown challenges to beach workouts and community opens, HRF is where fitness becomes a lifestyle.
+            We don&apos;t just train together — we compete, celebrate, and grow together. From our signature Throwdown challenges to beach workouts and community opens, <Logo /> is where fitness becomes a lifestyle.
           </p>
         </div>
 
@@ -57,7 +70,7 @@ export function Community() {
             <div
               key={event.title}
               className={cn(
-                "group relative aspect-square overflow-hidden bg-surface fade-in-up",
+                "group relative aspect-square overflow-hidden bg-surface fade-in-up max-w-md mx-auto w-full md:max-w-none",
                 inView && "visible"
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -68,8 +81,10 @@ export function Community() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-accent transition-colors flex items-center gap-2">
+                  {event.prefix && <Logo />}
                   {event.title}
+                  {event.suffix && <Logo />}
                 </h3>
                 <p className="text-white/80 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                   {event.description}
