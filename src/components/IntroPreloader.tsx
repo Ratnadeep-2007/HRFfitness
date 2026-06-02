@@ -60,12 +60,19 @@ export function IntroPreloader() {
         <button
           onClick={handleStart}
           disabled={!is3dLoaded}
-          className={`relative group flex items-center justify-center w-64 h-64 md:w-80 md:h-80 rounded-full cursor-pointer focus:outline-none transition-all duration-[2200ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${
+          style={{
+            transform: isDismissed 
+              ? "translateY(-120vh) rotate(-720deg) scale(0.5)" 
+              : "translateY(0) rotate(0deg) scale(1)",
+            opacity: isDismissed ? 0 : 1,
+            transitionProperty: "transform, opacity",
+            transitionDuration: "2200ms",
+            transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
+          }}
+          className={`relative group flex items-center justify-center w-64 h-64 md:w-80 md:h-80 rounded-full cursor-pointer focus:outline-none ${
             !is3dLoaded 
               ? "absolute opacity-0 scale-90 pointer-events-none" 
               : "opacity-100 scale-100"
-          } ${
-            isDismissed ? "-translate-y-[120vh] rotate-[-720deg] scale-50 opacity-0" : ""
           }`}
         >
           {/* Concentric rings */}
@@ -90,7 +97,7 @@ export function IntroPreloader() {
           (!is3dLoaded || isDismissed) ? 'opacity-0 translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'
         }`}>
           <span className="font-mono text-[10px] md:text-[11px] text-accent tracking-[0.3em] uppercase block mb-1">
-            Tap the Iron
+            Tap the Dumbbell
           </span>
           <span className="font-display font-extrabold text-xl md:text-2xl text-white tracking-widest uppercase">
             To Begin Transformation
