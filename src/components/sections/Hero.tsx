@@ -23,7 +23,7 @@ export function Hero() {
           </span>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display font-extrabold leading-[0.9] text-text tracking-tighter">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display font-extrabold leading-[1.1] md:leading-[0.9] text-text tracking-tighter">
             WHERE DISCIPLINE <br /> BECOMES <span className="text-accent">TRANSFORMATION</span>
           </h1>
 
