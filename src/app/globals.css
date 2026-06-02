@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -35,6 +36,10 @@
 }
 
 :root {
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
   --accent: #FF0000;
   --black: #0A0A0A;
   --charcoal: #141414;
@@ -49,19 +54,6 @@
   --foreground: var(--primary-text);
 }
 
-.light {
-  --black: #FFFFFF;
-  --charcoal: #F8F8F8;
-  --surface: #F4F4F4;
-  --border: #E5E5E5;
-  --muted: #737373;
-  --body-text: #404040;
-  --primary-text: #000000;
-  --off-white: #FFFFFF;
-
-  --background: var(--black);
-  --foreground: var(--primary-text);
-}
 
 @layer base {
   * {

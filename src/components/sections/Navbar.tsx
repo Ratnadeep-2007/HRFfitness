@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Moon, Sun, Menu, X } from "lucide-react"
-import { useTheme } from "next-themes"
+import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -19,7 +18,6 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -48,7 +46,7 @@ export function Navbar() {
             src="/hrf-main-logo.png"
             alt="HRF Fitness Logo"
             fill
-            className="object-contain transition-transform group-hover:scale-105 dark:invert-0 invert"
+            className="object-contain transition-transform group-hover:scale-105"
             priority
           />
         </Link>
@@ -68,14 +66,6 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 hover:bg-surface transition-colors rounded-none text-body"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
           <Link 
             href="#contact" 
             className="hidden sm:flex bg-gradient-to-r from-accent to-[#8B0000] text-white px-6 py-2 text-[13px] font-bold uppercase tracking-widest hover:brightness-110 transition-all hover:scale-105 active:scale-95"
