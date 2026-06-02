@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-svh w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-svh w-full flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image Placeholder with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-10000 hover:scale-110"

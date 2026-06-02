@@ -49,7 +49,7 @@
   --foreground: var(--primary-text);
 }
 
-[data-theme='light'] {
+.light {
   --black: #FFFFFF;
   --charcoal: #F8F8F8;
   --surface: #F4F4F4;
